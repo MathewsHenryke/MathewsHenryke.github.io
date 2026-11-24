@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mathews Almeida">
+<meta property="og:description" content="Suporte técnico, QA e front-end. Formado em Ciência da Computação, procurando vaga remota.">
+<meta property="og:url" content="https://mathewshenryke.github.io/">
+<meta property="og:image" content="https://mathewshenryke.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A6B4D'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EMA%3C/text%3E%3C/svg%3E">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Mathews Almeida</title>
+<meta name="description" content="Mathews Almeida: suporte técnico, QA e front-end. Formado em Ciência da Computação, procurando vaga remota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: coluna de leitura com rótulo de seção à esquerda nas telas largas; trilha da carreira em 4 paradas, desenhada como trilha de placa de circuito */
+:root {
+  --bg: #F4F6F5;
+  --surface: #FFFFFF;
+  --ink: #14201B;
+  --muted: #56645E;
+  --line: #D6DEDA;
+  --accent: #0A6B4D;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #DFEFE8;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1412; --surface: #151D1A; --ink: #E4EBE8; --muted: #9AA9A2; --line: #27332F;
+    --accent: #6CCBA5; --accent-ink: #0C1A14; --accent-soft: #17302A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1412; --surface: #151D1A; --ink: #E4EBE8; --muted: #9AA9A2; --line: #27332F;
+  --accent: #6CCBA5; --accent-ink: #0C1A14; --accent-soft: #17302A; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 1rem; line-height: 1.6; }
+.wrap {
+  max-width: 1040px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 720px) {
+  .wrap { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); }
+}
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+p { margin: 0; }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.mono { font-family: var(--font-mono); font-size: 0.8125rem; letter-spacing: 0.01em; font-variant-numeric: tabular-nums; }
+ul.ticks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+ul.ticks li { position: relative; padding-left: 1.25rem; }
+ul.ticks li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--accent); }
+
+/* Topo */
+.hero { padding-block: 3.5rem 2.5rem; display: grid; gap: 1.5rem; }
+.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; }
+.hero h1 { font-size: clamp(2.75rem, 8vw, 5rem); font-weight: 800; line-height: 0.95; letter-spacing: -0.02em; }
+.lead { font-size: 1.125rem; max-width: 62ch; color: var(--ink); }
+.meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; color: var(--muted); }
+.status { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); font-weight: 600; }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.1rem; border-radius: 8px;
+  font-weight: 600; font-size: 0.95rem; text-decoration: none; border: 1.5px solid var(--line); color: var(--ink); background: var(--surface);
+}
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.primary:hover { filter: brightness(1.08); }
+.email { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; color: var(--muted); }
+.email span { color: var(--ink); user-select: all; }
+.copy { font: inherit; font-size: 0.8125rem; padding: 0.25rem 0.6rem; border-radius: 6px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; }
+.copy:hover { color: var(--ink); border-color: var(--accent); }
+.remote { color: var(--muted); max-width: 62ch; }
+
+/* Trilha da carreira */
+.path { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; position: relative; padding-top: 1.75rem; }
+.path::before { content: ""; position: absolute; left: 6px; right: 6px; top: 6px; height: 2px; background: var(--line); }
+.path::after { content: ""; position: absolute; left: 75%; right: 6px; top: 6px; height: 2px; background: var(--accent); }
+.path li { position: relative; display: grid; gap: 0.2rem; min-width: 0; align-content: start; }
+.path li::before { content: ""; position: absolute; top: calc(-1.75rem); left: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 2px solid var(--muted); }
+.path li.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.path .yr { color: var(--muted); }
+.path strong { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; }
+.path span:last-child { color: var(--muted); font-size: 0.9rem; line-height: 1.45; }
+.path li.now strong { color: var(--accent); }
+@media (max-width: 719px) {
+  .path { grid-template-columns: 1fr; padding-top: 0; padding-left: 1.75rem; gap: 1.1rem; }
+  .path::before { left: 6px; right: auto; top: 8px; bottom: 8px; width: 2px; height: auto; }
+  .path::after { display: none; }
+  .path li::before { top: 0.35rem; left: -1.75rem; }
+}
+
+/* Seções */
+section { padding-block: 3rem; border-top: 1px solid var(--line); display: grid; gap: 1.5rem; }
+@media (min-width: 880px) {
+  section { grid-template-columns: 220px minmax(0, 1fr); gap: 2.5rem; }
+}
+.sec-head { display: grid; gap: 0.4rem; align-content: start; }
+.sec-head h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.01em; }
+.sec-head p { color: var(--muted); font-size: 0.9rem; }
+.sec-body { display: grid; gap: 1.75rem; min-width: 0; }
+.intro { max-width: 62ch; }
+
+/* Hoje na Systen */
+.areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2rem 2.25rem; }
+.area { display: grid; gap: 0.75rem; align-content: start; min-width: 0; padding-top: 1rem; border-top: 2px solid var(--ink); }
+.area h3 { font-size: 1.2rem; font-weight: 600; }
+.area .fig { color: var(--accent); }
+.also { color: var(--muted); }
+
+/* Projetos */
+.projects { display: grid; gap: 1.25rem; }
+.project { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1.4rem; display: grid; gap: 0.9rem; min-width: 0; }
+.project-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1rem; align-items: baseline; }
+.project h3 { font-size: 1.3rem; font-weight: 600; }
+.project .what { color: var(--muted); max-width: 62ch; }
+.badge { color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0.15rem 0.6rem; white-space: nowrap; }
+.badge.open { color: var(--accent); border-color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tags span { background: var(--accent-soft); color: var(--ink); padding: 0.2rem 0.55rem; border-radius: 6px; }
+.small-list { display: grid; gap: 0.75rem; }
+.small-list h3 { font-size: 1.05rem; font-weight: 600; }
+
+/* Trajetória */
+.jobs { display: grid; gap: 0; }
+.job { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 1rem; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+.job:first-child { padding-top: 0; }
+.job .when { color: var(--muted); padding-top: 0.2rem; }
+.job h3 { font-family: var(--font-body); font-size: 1.02rem; font-weight: 600; }
+.job .org { color: var(--muted); font-size: 0.92rem; }
+.job p:last-child { margin-top: 0.3rem; }
+@media (max-width: 560px) { .job { grid-template-columns: 1fr; gap: 0.25rem; } }
+
+/* Formação e ferramentas */
+.edu { display: grid; gap: 1rem; }
+.edu h3 { font-family: var(--font-body); font-size: 1.05rem; font-weight: 600; }
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 1.5rem 2rem; }
+.skills h3 { font-family: var(--font-body); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; margin-bottom: 0.5rem; }
+.skills p { line-height: 1.7; }
+
+footer { border-top: 1px solid var(--line); padding-block: 2.5rem 3.5rem; display: grid; gap: 1rem; }
+footer h2 { font-size: 1.6rem; font-weight: 800; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .status::before { animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 7px var(--accent-soft); } }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow mono">Suporte técnico · QA · Front-end</p>
+    <h1>Mathews Almeida</h1>
+    <p class="lead">Sou formado em Ciência da Computação e trabalho numa empresa de software. Atendo clientes, testo cada entrega antes de ela ir para o ar e corrijo telas do sistema. Antes, foram cinco anos de atendimento ao público, com vendas, conserto de celulares e gestão de loja. Sei ouvir o problema do cliente e explicar o defeito para quem vai corrigir.</p>
+    <div class="meta">
+      <span class="status">Procurando vaga remota</span>
+      <span>São Luís – MA</span>
+      <span>Ciência da Computação, 2021</span>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="curriculo-mathews-almeida.pdf" target="_blank" rel="noopener">Baixar currículo em PDF</a>
+      <a class="btn" href="https://www.linkedin.com/in/mathews-almeida-759a16203/" target="_blank" rel="noopener">LinkedIn ↗</a>    </div>
+    <p class="email">E-mail: <span id="email">mathewshenryke18@gmail.com</span> <button class="copy" type="button" id="copy-email" data-copy="mathewshenryke18@gmail.com">Copiar</button></p>
+  </header>
+
+  <ol class="path" aria-label="Trajetória resumida">
+    <li><span class="yr mono">2020–2021</span><strong>Atendimento</strong><span>Caixa, marketing e promoção de vendas</span></li>
+    <li><span class="yr mono">2022–2023</span><strong>Bancada</strong><span>Técnico em eletrônica e gerente de loja</span></li>
+    <li><span class="yr mono">2023–2025</span><strong>Vendas técnicas</strong><span>Informática e autopeças, com orçamento e estoque</span></li>
+    <li class="now"><span class="yr mono">2025–hoje</span><strong>Software</strong><span>Suporte, QA e front-end na Systen</span></li>
+  </ol>
+
+  <p class="remote" style="margin-top:2.5rem">Já trabalho com as ferramentas do trabalho remoto: acesso remoto a servidor, tarefas por card, código no GitHub e comunicação por escrito.</p>
+
+  <section style="margin-top:2.5rem">
+    <div class="sec-head">
+      <h2>Hoje na Systen</h2>
+      <p class="mono">out 2025 – hoje</p>
+    </div>
+    <div class="sec-body">
+      <p class="intro">Systen Desenvolvimento de Software, antiga Criative Software. Fui contratado como consultor comercial e, no dia a dia, também cuido de suporte, testes e correções no <strong>loc10</strong>, o sistema de gestão para locadoras de equipamentos, e no sistema anterior da empresa, que ainda atende parte dos clientes.</p>
+      <div class="areas">
+        <div class="area">
+          <h3>Suporte e servidor</h3>
+          <p class="fig mono">12 instâncias monitoradas a cada 5 min</p>
+          <ul class="ticks">
+            <li>Atendo chamados de clientes e da equipe, do diagnóstico à solução.</li>
+            <li>Acesso remoto ao servidor do sistema anterior: Windows Server, banco Firebird e serviços em Docker.</li>
+            <li>Investigo lentidão e erro de conexão com um script que junta memória, disco, eventos e transações do banco num relatório só.</li>
+            <li>Criei um monitor que avisa no Telegram antes de um serviço estourar a memória, com comandos para ver quem está conectado e reiniciar com confirmação.</li>
+          </ul>
+        </div>
+        <div class="area">
+          <h3>Qualidade (QA)</h3>
+          <p class="fig mono">528 chamadas de API e 40 telas testadas</p>
+          <ul class="ticks">
+            <li>Confiro cada entrega nos ambientes de desenvolvimento e de homologação antes de ela ir para produção.</li>
+            <li>Testei todas as permissões do sistema com cargos de acesso vazio, só leitura e completo, e documentei cada divergência.</li>
+            <li>Automatizo testes de tela com Playwright e testo APIs com Postman.</li>
+            <li>Registro cada defeito em card, com o passo a passo para reproduzir.</li>
+          </ul>
+        </div>
+        <div class="area">
+          <h3>Front-end</h3>
+          <p class="fig mono">React · Next.js · TypeScript</p>
+          <ul class="ticks">
+            <li>Busca de CNPJ pela BrasilAPI em três cadastros que ainda não tinham.</li>
+            <li>CPF válido terminado em 00 deixou de ser recusado em seis telas.</li>
+            <li>Orçamento que mantém o usuário na tela ao salvar e avisa quando há alteração não salva.</li>
+            <li>Número de série e numeração sequencial de patrimônio no inventário.</li>
+            <li>Comecei o app mobile do loc10 em React Native (Expo): login, menu e orçamentos.</li>
+          </ul>
+        </div>
+        <div class="area">
+          <h3>Documentação e treinamento</h3>
+          <p class="fig mono">101 perguntas na Central de Ajuda</p>
+          <ul class="ticks">
+            <li>Escrevi a FAQ da Central de Ajuda, em 7 categorias por módulo.</li>
+            <li>Produzi vídeos tutoriais narrados: cadastro de cliente, orçamento, contrato recorrente e pós-venda.</li>
+            <li>Escrevi os casos de uso dos treinamentos de financeiro e almoxarifado de um cliente.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="also">Na frente comercial, faço atendimento e acompanhamento de clientes no CRM Nemo.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Projetos próprios</h2>
+      <p>Feitos fora do trabalho, do zero ao ar.</p>
+    </div>
+    <div class="sec-body">
+      <div class="projects">
+        <article class="project">
+          <div class="project-top">
+            <h3>FLUXO</h3>
+            <span class="badge mono">no ar · código privado</span>
+          </div>
+          <p class="what">App de finanças pessoais que funciona no celular como aplicativo (PWA), com plano pago por assinatura.</p>
+          <ul class="ticks">
+            <li>Dados em tempo real no Firestore e login pelo Firebase Auth.</li>
+            <li>Backend em Cloud Functions: e-mails pelo SendGrid e assinatura recorrente pelo Mercado Pago.</li>
+            <li>Testes de ponta a ponta com Cypress para landing, login e app.</li>
+          </ul>
+          <div class="tags mono"><span>React 19</span><span>Firebase</span><span>Cloud Functions</span><span>Mercado Pago</span><span>Cypress</span></div>        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>Galeria de entrega de fotos</h3>
+            <span class="badge mono">no ar · código privado</span>
+          </div>
+          <p class="what">Plataforma para uma fotógrafa entregar ensaios. Cada cliente escolhe as fotos dentro da quantidade que pagou.</p>
+          <ul class="ticks">
+            <li>A fotógrafa libera o acesso de cada cliente com cota de fotos e data de validade.</li>
+            <li>Fotos em qualidade original num armazenamento privado, entregues por links temporários.</li>
+            <li>Painel para criar álbuns, subir fotos e liberar fotos extras depois de uma nova compra.</li>
+          </ul>
+          <div class="tags mono"><span>Next.js 16</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span></div>
+        </article>
+        <article class="project">
+          <div class="project-top">
+            <h3>Convite de casamento online</h3>
+            <span class="badge mono">no ar · código privado</span>
+          </div>
+          <p class="what">Site do meu casamento, com confirmação de presença e presente via Pix.</p>
+          <ul class="ticks">
+            <li>Cada convite tem uma senha e a lista de nomes da família, e o convidado marca quem vai.</li>
+            <li>Pix copia e cola e QR Code gerados no navegador pelo padrão do Banco Central, sem intermediário de pagamento.</li>
+            <li>Painel dos noivos com as confirmações e aviso no Telegram a cada resposta.</li>
+          </ul>
+          <div class="tags mono"><span>Next.js 16</span><span>TypeScript</span><span>Supabase</span><span>Vercel</span></div>
+        </article>
+      </div>
+      <div class="small-list">
+        <h3>Automações menores</h3>
+        <ul class="ticks">
+          <li>Aviso no Telegram dos commits, branches e pull requests dos 5 repositórios do time.</li>
+          <li>Transcrição de áudio local com Whisper na placa de vídeo, para reuniões e treinamentos.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Trajetória</h2>
+    </div>
+    <div class="sec-body">
+      <div class="jobs">
+        <div class="job"><p class="when mono">out 2025 – hoje</p><div><h3>Consultor comercial, com suporte, QA e front-end</h3><p class="org">Systen Desenvolvimento de Software · São Luís – MA</p></div></div>
+        <div class="job"><p class="when mono">mar 2024 – ago 2025</p><div><h3>Vendedor interno</h3><p class="org">Soar Comércio de Peças e Serviços Automotivos · São Luís – MA</p><p>Vendas no atacado e no varejo, orçamentos, negociação, controle de estoque e orientação técnica sobre as peças.</p></div></div>
+        <div class="job"><p class="when mono">dez 2023 – fev 2024</p><div><h3>Vendedor</h3><p class="org">Universal Informática · São Luís – MA</p><p>Venda de equipamentos e soluções de informática, com levantamento da necessidade de cada cliente ou empresa.</p></div></div>
+        <div class="job"><p class="when mono">fev 2023 – ago 2023</p><div><h3>Gerente de loja</h3><p class="org">Senhor Smart (JN Celulares) · Parnaíba – PI</p><p>Faturamento, compras para reposição, atendimento e supervisão da equipe.</p></div></div>
+        <div class="job"><p class="when mono">ago 2022 – mai 2023</p><div><h3>Técnico em eletrônica</h3><p class="org">Senhor Smart (JN Celulares) · Parnaíba – PI</p><p>Diagnóstico e conserto de smartphones, celulares e tablets.</p></div></div>
+        <div class="job"><p class="when mono">mar 2021 – dez 2021</p><div><h3>Promotor de vendas</h3><p class="org">GD Distribuidor · Parnaíba – PI</p></div></div>
+        <div class="job"><p class="when mono">2020</p><div><h3>Assistente de marketing e caixa</h3><p class="org">Prefeitura de Buriti e Itália Pizza · Buriti – MA</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Formação</h2>
+    </div>
+    <div class="sec-body edu">
+      <div>
+        <h3>Bacharelado em Ciência da Computação</h3>
+        <p class="org" style="color:var(--muted)">Estácio / CEUT · <span class="mono">2016 – 2021</span></p>
+      </div>
+      <div>
+        <h3>Cursos</h3>
+        <ul class="ticks">
+          <li>Técnico em smartphones, celulares e tablets · Senhor Smart · <span class="mono">2022</span></li>
+          <li>Pentesting · The Forense · <span class="mono">20 h · 2018</span></li>
+          <li>Crimes digitais · The Forense · <span class="mono">5 h · 2018</span></li>
+          <li>Introdução à perícia digital · The Forense · <span class="mono">5 h · 2018</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Ferramentas</h2>
+    </div>
+    <div class="sec-body">
+      <div class="skills">
+        <div><h3>Suporte e infraestrutura</h3><p>Windows e Windows Server, acesso remoto, Firebird, Docker, PowerShell, Git</p></div>
+        <div><h3>Qualidade</h3><p>Playwright, Cypress, Postman, testes de permissão e de API</p></div>
+        <div><h3>Desenvolvimento</h3><p>React, Next.js, TypeScript, Tailwind CSS, React Native (Expo), Supabase, Firebase, Node.js, Python</p></div>
+        <div><h3>No dia a dia</h3><p>Figma para protótipos; CRM Nemo para acompanhamento de clientes</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Contato</h2>
+    <p class="email">E-mail: <span id="email-2">mathewshenryke18@gmail.com</span> <button class="copy" type="button" id="copy-email-2" data-copy="mathewshenryke18@gmail.com">Copiar</button></p>
+    <div class="actions">
+      <a class="btn primary" href="curriculo-mathews-almeida.pdf" target="_blank" rel="noopener">Baixar currículo em PDF</a>
+      <a class="btn" href="https://www.linkedin.com/in/mathews-almeida-759a16203/" target="_blank" rel="noopener">LinkedIn ↗</a>    </div>
+  </footer>
+</div>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var text = btn.getAttribute('data-copy');
+    var target = btn.previousElementSibling;
+    function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copiar'; }, 2200); }
+    function fallback() {
+      try {
+        var r = document.createRange(); r.selectNodeContents(target);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        done('Selecionado: use Ctrl+C');
+      } catch (e) { done('Copie o endereço ao lado'); }
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { done('Copiado'); }, fallback);
+    } catch (e) { fallback(); }
+  });
+});
+</script>
+</body>
+</html>
